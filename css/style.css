@@ -535,6 +535,28 @@ img{
     max-height:64px;
 
 }
+
+/* ==================================================
+   SERIKA
+================================================== */
+
+.partner-offer-card[data-partner="Serika"]{
+    background:linear-gradient(
+        180deg,
+        #fffafa 0%,
+        #f7eeee 100%
+    );
+}
+
+.partner-offer-card[data-partner="Serika"] .partner-logo-header{
+    background:#9c4943;
+    border-bottom:2px solid #ddb6b2;
+}
+
+.partner-offer-card[data-partner="Serika"] .partner-logo{
+    max-width:190px;
+    max-height:72px;
+}
 /* ==================================================
    PARTNER CARD BODY
 ================================================== */
