@@ -652,6 +652,28 @@ img{
     max-height:72px;
 }
 /* ==================================================
+   YELOLY
+================================================== */
+
+.partner-offer-card[data-partner="Yeloly"]{
+    background:linear-gradient(
+        180deg,
+        #fffefe 0%,
+        #f8f4fb 100%
+    );
+}
+
+.partner-offer-card[data-partner="Yeloly"] .partner-logo-header{
+    background:#0d0d0d;
+    border-bottom:2px solid #5f1682;
+}
+
+.partner-offer-card[data-partner="Yeloly"] .partner-logo{
+    width:205px;
+    max-width:205px;
+    max-height:72px;
+}
+/* ==================================================
    PARTNER CARD BODY
 ================================================== */
 
