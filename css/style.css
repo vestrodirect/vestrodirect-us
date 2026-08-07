@@ -628,6 +628,29 @@ img{
     max-width:230px;
     max-height:72px;
 }
+
+/* ==================================================
+   PJUR
+================================================== */
+
+.partner-offer-card[data-partner="PJUR"]{
+    background:linear-gradient(
+        180deg,
+        #fffefb 0%,
+        #fffaf2 100%
+    );
+}
+
+.partner-offer-card[data-partner="PJUR"] .partner-logo-header{
+    background:#050822;
+    border-bottom:2px solid #ffe84a;
+}
+
+.partner-offer-card[data-partner="PJUR"] .partner-logo{
+    width:170px;
+    max-width:170px;
+    max-height:72px;
+}
 /* ==================================================
    PARTNER CARD BODY
 ================================================== */
