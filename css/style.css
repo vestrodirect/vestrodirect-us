@@ -553,10 +553,10 @@ img{
     border-bottom:2px solid #ddb6b2;
 }
 
-.partner-offer-card[data-partner="Serika"] .partner-logo{
-    width:270px;
-    max-width:270px;
-    max-height:84px;
+.partner-offer-card[data-partner="Body Body"] .partner-logo{
+    width:280px;
+    max-width:280px;
+    max-height:78px;
 }
 
 /* ==================================================
