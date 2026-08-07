@@ -574,12 +574,14 @@ img{
 .partner-offer-card[data-partner="Body Body"] .partner-logo-header{
     background:#181c1d;
     border-bottom:2px solid #4b5254;
+    min-height:108px;
+    padding:18px 30px;
 }
 
 .partner-offer-card[data-partner="Body Body"] .partner-logo{
     width:320px;
     max-width:320px;
-    max-height:90px;
+    max-height:72px;
 }
 /* ==================================================
    PARTNER CARD BODY
