@@ -607,6 +607,28 @@ img{
     max-height:72px;
 }
 /* ==================================================
+   MAGIC MOTION
+================================================== */
+
+.partner-offer-card[data-partner="Magic Motion"]{
+    background:linear-gradient(
+        180deg,
+        #fffefe 0%,
+        #f7f5ff 100%
+    );
+}
+
+.partner-offer-card[data-partner="Magic Motion"] .partner-logo-header{
+    background:#ffffff;
+    border-bottom:2px solid #a56cff;
+}
+
+.partner-offer-card[data-partner="Magic Motion"] .partner-logo{
+    width:190px;
+    max-width:190px;
+    max-height:72px;
+}
+/* ==================================================
    PARTNER CARD BODY
 ================================================== */
 
