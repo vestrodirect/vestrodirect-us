@@ -554,6 +554,7 @@ img{
 }
 
 .partner-offer-card[data-partner="Serika"] .partner-logo{
+    width:270px;
     max-width:270px;
     max-height:84px;
 }
