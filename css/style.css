@@ -558,6 +558,29 @@ img{
     max-width:270px;
     max-height:84px;
 }
+
+/* ==================================================
+   BODY BODY
+================================================== */
+
+.partner-offer-card[data-partner="Body Body"]{
+    background:linear-gradient(
+        180deg,
+        #fffefe 0%,
+        #f3f5f5 100%
+    );
+}
+
+.partner-offer-card[data-partner="Body Body"] .partner-logo-header{
+    background:#181c1d;
+    border-bottom:2px solid #4b5254;
+}
+
+.partner-offer-card[data-partner="Body Body"] .partner-logo{
+    width:210px;
+    max-width:210px;
+    max-height:74px;
+}
 /* ==================================================
    PARTNER CARD BODY
 ================================================== */
