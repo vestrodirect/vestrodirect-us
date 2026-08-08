@@ -744,6 +744,28 @@ img{
     max-height:72px;
 }
 /* ==================================================
+   HERJOYHOUSE
+================================================== */
+
+.partner-offer-card[data-partner="HERJOYHOUSE"]{
+    background:linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #fff6f8 100%
+    );
+}
+
+.partner-offer-card[data-partner="HERJOYHOUSE"] .partner-logo-header{
+    background:#f3dce5;
+    border-bottom:2px solid #e79aaf;
+}
+
+.partner-offer-card[data-partner="HERJOYHOUSE"] .partner-logo{
+    width:230px;
+    max-width:230px;
+    max-height:72px;
+}
+/* ==================================================
    PARTNER CARD BODY
 ================================================== */
 
