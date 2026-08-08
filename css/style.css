@@ -599,7 +599,9 @@ img{
     max-width:230px;
     max-height:72px;
 }
-
+.partner-offer-card[data-partner="Magic Motion"] .partner-main-link{
+    transform:translateY(-2px);
+}
 /* ==================================================
    PJUR
 ================================================== */
@@ -737,7 +739,7 @@ img{
     max-height:72px;
 }
 .partner-offer-card[data-partner="HERJOYHOUSE"] .partner-main-button{
-    margin-top:54px;
+    margin-top:56px;
 }
 /* ==================================================
    PARTNER CARD BODY
