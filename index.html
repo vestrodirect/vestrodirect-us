@@ -2305,9 +2305,7 @@
 
         });
     </script>
-  <!-- ==================================================
-       <!-- STORE CATEGORY FILTER -->
-    =================================================== -->
+<!-- STORE CATEGORY FILTER -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -2332,11 +2330,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     .split(/\s+/)
                     .filter(Boolean);
 
-                const shouldShow =
+                if (
                     selectedCategory === "all" ||
-                    categories.includes(selectedCategory);
-
-                card.hidden = !shouldShow;
+                    categories.includes(selectedCategory)
+                ) {
+                    card.style.display = "";
+                } else {
+                    card.style.display = "none";
+                }
 
             });
 
