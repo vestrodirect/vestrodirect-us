@@ -2258,7 +2258,7 @@
     <!-- ==================================================
          PARTNER CLICK TRACKING
     =================================================== -->
-    <script>
+  <script>
 document.addEventListener("DOMContentLoaded", function () {
 
     const partnerLinks = document.querySelectorAll(
@@ -2267,7 +2267,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     partnerLinks.forEach(function (link) {
 
-        link.addEventListener("click", function () {
+        link.addEventListener("click", function (event) {
 
             const card = link.closest(".partner-offer-card");
 
@@ -2284,6 +2284,27 @@ document.addEventListener("DOMContentLoaded", function () {
                 link.getAttribute("aria-label") ||
                 "partner_link";
 
+            const destination = link.href;
+            const target = link.target;
+
+            event.preventDefault();
+
+            let redirected = false;
+
+            function goToPartner() {
+                if (redirected) {
+                    return;
+                }
+
+                redirected = true;
+
+                if (target === "_blank") {
+                    window.open(destination, "_blank", "noopener");
+                } else {
+                    window.location.href = destination;
+                }
+            }
+
             if (typeof gtag === "function") {
 
                 gtag("event", "vd_usa_click", {
@@ -2292,22 +2313,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     link_text: linkText,
 
-                    link_url: link.href,
+                    link_url: destination,
 
                     page_path: window.location.pathname,
 
                     page_title: document.title,
 
-                    transport_type: "beacon"
+                    event_callback: goToPartner,
 
+                    event_timeout: 1000
                 });
 
+                setTimeout(goToPartner, 1100);
+
+            } else {
+
+                goToPartner();
             }
-
         });
-
     });
-
 });
 </script>
   <!-- ==================================================
