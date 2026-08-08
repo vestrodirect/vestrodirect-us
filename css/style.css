@@ -696,6 +696,28 @@ img{
     max-height:72px;
 }
 /* ==================================================
+   TU MANDO
+================================================== */
+
+.partner-offer-card[data-partner="Tu Mando"]{
+    background:linear-gradient(
+        180deg,
+        #fffdfb 0%,
+        #f8f1ee 100%
+    );
+}
+
+.partner-offer-card[data-partner="Tu Mando"] .partner-logo-header{
+    background:#42121f;
+    border-bottom:2px solid #d2ad72;
+}
+
+.partner-offer-card[data-partner="Tu Mando"] .partner-logo{
+    width:235px;
+    max-width:235px;
+    max-height:72px;
+}
+/* ==================================================
    PARTNER CARD BODY
 ================================================== */
 
