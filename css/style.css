@@ -1602,18 +1602,24 @@ img{
 
 .partner-benefits::after{
     content:"";
-    position:absolute;
 
+    position:absolute;
     left:50%;
     top:50%;
 
-    width:21px;
-    height:21px;
+    width:31px;
+    height:31px;
 
-    background:url("../images/gold-lily-icon.png") center/contain no-repeat;
+    border:1px solid var(--gold);
+    border-radius:50%;
+
+    background:
+        #ffffff
+        url("../images/gold-lily-icon.png")
+        center / 21px 21px
+        no-repeat;
 
     transform:translate(-50%,-50%);
-    pointer-events:none;
 }
 
 .partner-benefits li{
