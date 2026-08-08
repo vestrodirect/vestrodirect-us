@@ -962,8 +962,6 @@ img{
 
     transform:translateX(-50%);
 }
-
-
 /* ==================================================
    PARTNER TRUST LINE
 ================================================== */
@@ -1597,8 +1595,25 @@ img{
     }
 
   .partner-benefits{
+    position:relative;
     grid-template-columns:repeat(2,minmax(0,1fr));
     gap:8px 10px;
+}
+
+.partner-benefits::after{
+    content:"";
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    width:21px;
+    height:21px;
+
+    background:url("../images/gold-lily-icon.png") center/contain no-repeat;
+
+    transform:translate(-50%,-50%);
+    pointer-events:none;
 }
 
 .partner-benefits li{
@@ -1656,7 +1671,9 @@ img{
         padding:0;
     }
   
-
+.partner-offer-card[data-partner="Tu Mando"] .partner-main-button{
+    margin-top:14px;
+}
 
     /* ==================================================
        WHY VESTRODIRECT & FAQ
