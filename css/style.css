@@ -1596,18 +1596,18 @@ img{
         margin:7px 0 10px;
     }
 
-    .partner-benefits{
+  .partner-benefits{
     grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:10px 10px;
+    gap:8px 10px;
 }
 
 .partner-benefits li{
-    padding-top:26px;
+    min-height:66px;
+    padding-top:35px;
 
     font-size:10px;
     line-height:1.35;
 }
-
     .partner-trust-line{
         gap:7px 16px;
 
