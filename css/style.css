@@ -454,37 +454,8 @@ img{
 
 /* ==================================================
    OFFER-SPECIFIC STYLES
-   TEMPORARY: MYSTIM & ORION
 ================================================== */
 
-.partner-offer-card[data-partner="Mystim"]{
-    background:linear-gradient(
-        180deg,
-        #fffaf4 0%,
-        #fff5e9 100%
-    );
-}
-
-.partner-offer-card[data-partner="Mystim"] .partner-logo-header{
-    background:linear-gradient(
-        135deg,
-        #120e10 0%,
-        #2b2528 100%
-    );
-}
-
-.partner-offer-card[data-partner="Orion"]{
-    background:linear-gradient(
-        180deg,
-        #f5fbfe 0%,
-        #eaf5fa 100%
-    );
-}
-
-.partner-offer-card[data-partner="Orion"] .partner-logo-header{
-    background:#f3f9fc;
-    border-bottom:2px solid #e70046;
-}
 /* ==================================================
   LOREN
 ================================================== */
