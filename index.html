@@ -2259,55 +2259,62 @@
          PARTNER CLICK TRACKING
     =================================================== -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
-            const partnerLinks = document.querySelectorAll(
-                ".partner-offer-card a"
-            );
+    const partnerLinks = document.querySelectorAll(
+        ".partner-offer-card a"
+    );
 
-            partnerLinks.forEach(function (link) {
+    partnerLinks.forEach(function (link) {
 
-                link.addEventListener("click", function () {
+        link.addEventListener("click", function () {
 
-                    const card = link.closest(".partner-offer-card");
+            const card = link.closest(".partner-offer-card");
 
-                    let partnerName = "unknown_partner";
+            if (!card) {
+                return;
+            }
 
-                    if (card.classList.contains("partner-offer-card-mystim")) {
-                        partnerName = "Mystim";
-                    }
+            const partnerName =
+                card.dataset.partner || "unknown_partner";
 
-                    if (card.classList.contains("partner-offer-card-orion")) {
-                        partnerName = "Orion";
-                    }
+            const linkText =
+                link.innerText.trim() ||
+                link.querySelector("img")?.alt ||
+                link.getAttribute("aria-label") ||
+                "partner_link";
 
-                    if (card.classList.contains("partner-offer-card-tenga")) {
-                        partnerName = "Tenga";
-                    }
+            if (typeof gtag === "function") {
 
-                    if (typeof gtag === "function") {
-                        gtag("event", "vd_usa_click", {
-                            partner_name: partnerName,
-                            link_text:
-                                link.innerText.trim() ||
-                                link.querySelector("img")?.alt ||
-                                "partner_link",
-                            link_url: link.href,
-                            page_path: window.location.pathname,
-                            page_title: document.title,
-                            transport_type: "beacon"
-                        });
-                    }
+                gtag("event", "vd_usa_click", {
+
+                    partner_name: partnerName,
+
+                    link_text: linkText,
+
+                    link_url: link.href,
+
+                    page_path: window.location.pathname,
+
+                    page_title: document.title,
+
+                    transport_type: "beacon"
 
                 });
 
-            });
+            }
 
         });
-    </script>
-<!-- STORE CATEGORY FILTER -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
+
+    });
+
+});
+</script>
+  <!-- ==================================================
+         <!-- STORE CATEGORY FILTER -->
+    =================================================== --> 
+ <script>
+ document.addEventListener("DOMContentLoaded", function () {
 
     const filterButtons = document.querySelectorAll(".store-filter-btn");
     const storeCards = document.querySelectorAll(".partner-offer-card");
