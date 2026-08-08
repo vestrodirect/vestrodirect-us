@@ -765,6 +765,9 @@ img{
     max-width:230px;
     max-height:72px;
 }
+.partner-offer-card[data-partner="HERJOYHOUSE"] .partner-main-button{
+    margin-top:34px;
+}
 /* ==================================================
    PARTNER CARD BODY
 ================================================== */
