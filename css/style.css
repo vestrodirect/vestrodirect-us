@@ -717,8 +717,9 @@ img{
     max-width:235px;
     max-height:72px;
 }
-.partner-offer-card[data-partner="Tu Mando"] .partner-main-link {
-    margin-top: auto;
+
+.partner-offer-card[data-partner="Tu Mando"] .partner-main-button{
+    margin-top:auto;
 }
 /* ==================================================
    PARTNER CARD BODY
