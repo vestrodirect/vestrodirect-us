@@ -722,6 +722,28 @@ img{
     margin-top:auto;
 }
 /* ==================================================
+   BELLESA BOUTIQUE
+================================================== */
+
+.partner-offer-card[data-partner="Bellesa Boutique"]{
+    background:linear-gradient(
+        180deg,
+        #fffdfd 0%,
+        #fff4f2 100%
+    );
+}
+
+.partner-offer-card[data-partner="Bellesa Boutique"] .partner-logo-header{
+    background:#f7d2cf;
+    border-bottom:2px solid #cf675f;
+}
+
+.partner-offer-card[data-partner="Bellesa Boutique"] .partner-logo{
+    width:230px;
+    max-width:230px;
+    max-height:72px;
+}
+/* ==================================================
    PARTNER CARD BODY
 ================================================== */
 
