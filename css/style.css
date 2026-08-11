@@ -831,6 +831,28 @@ img{
     margin-top:56px;
 }
 /* ==================================================
+   UNBOUND
+================================================== */
+
+.partner-offer-card[data-partner="Unbound"]{
+    background:linear-gradient(
+        180deg,
+        #f4fdff 0%,
+        #e8f8fc 100%
+    );
+}
+
+.partner-offer-card[data-partner="Unbound"] .partner-logo-header{
+    background:#ef72b7;
+    border-bottom:2px solid #9feef2;
+}
+
+.partner-offer-card[data-partner="Unbound"] .partner-logo{
+    width:190px;
+    max-width:190px;
+    max-height:72px;
+}
+/* ==================================================
    PARTNER CARD BODY
 ================================================== */
 
