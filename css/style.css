@@ -551,8 +551,8 @@ img{
 .partner-offer-card[data-partner="Pleasure Chest"]{
     background:linear-gradient(
         180deg,
-        #fff7fb 0%,
-        #fbe8f2 100%
+        #f5fbff 0%,
+        #e4f3fb 100%
     );
 }
 
@@ -562,9 +562,9 @@ img{
 }
 
 .partner-offer-card[data-partner="Pleasure Chest"] .partner-logo{
-    width:290px;
-    max-width:290px;
-    max-height:72px;
+    width:340px;
+    max-width:340px;
+    max-height:76px;
 }
 /* ==================================================
   LOREN
