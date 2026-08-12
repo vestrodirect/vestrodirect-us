@@ -544,7 +544,28 @@ img{
 /* ==================================================
    OFFER-SPECIFIC STYLES
 ================================================== */
+/* ==================================================
+   PLEASURE CHEST
+================================================== */
 
+.partner-offer-card[data-partner="Pleasure Chest"]{
+    background:linear-gradient(
+        180deg,
+        #fff7fb 0%,
+        #fbe8f2 100%
+    );
+}
+
+.partner-offer-card[data-partner="Pleasure Chest"] .partner-logo-header{
+    background:#000000;
+    border-bottom:2px solid #e8a8c8;
+}
+
+.partner-offer-card[data-partner="Pleasure Chest"] .partner-logo{
+    width:290px;
+    max-width:290px;
+    max-height:72px;
+}
 /* ==================================================
   LOREN
 ================================================== */
