@@ -2898,7 +2898,7 @@ for all genders and experience levels.
     <!-- ==================================================
          PARTNER CLICK TRACKING
     =================================================== -->
-  <script>
+ <script>
 document.addEventListener("DOMContentLoaded", function () {
 
     const partnerLinks = document.querySelectorAll(
@@ -2945,6 +2945,23 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             }
 
+            /* TrafficJunky conversion: outbound partner click */
+            const tjPixel = new Image();
+            const tjRandom = Date.now() + Math.floor(Math.random() * 1000000);
+            const tjTransactionId = "vd_" + tjRandom;
+            const tjDescription = encodeURIComponent(
+                partnerName + " | " + linkText
+            );
+
+            tjPixel.src =
+                "https://ads.trafficjunky.net/?" +
+                "a=1000584901" +
+                "&member_id=1009168541" +
+                "&cb=" + tjRandom +
+                "&cti=" + tjTransactionId +
+                "&ctv=0.00" +
+                "&ctd=" + tjDescription;
+
             if (typeof gtag === "function") {
 
                 gtag("event", "vd_usa_click", {
@@ -2962,6 +2979,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     event_callback: goToPartner,
 
                     event_timeout: 1000
+
                 });
 
                 setTimeout(goToPartner, 1100);
@@ -2970,8 +2988,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 goToPartner();
             }
+
         });
     });
+
 });
 </script>
   <!-- ==================================================
