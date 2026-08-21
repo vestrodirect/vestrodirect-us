@@ -588,6 +588,28 @@ img{
     max-height:none;
 }
 /* ==================================================
+   VENUSFUN
+================================================== */
+
+.partner-offer-card[data-partner="VenusFun"]{
+    background:linear-gradient(
+        180deg,
+        #fff3f8 0%,
+        #ffdce9 100%
+    );
+}
+
+.partner-offer-card[data-partner="VenusFun"] .partner-logo-header{
+    background:#ffffff;
+    border-bottom:2px solid #ff2b87;
+}
+
+.partner-offer-card[data-partner="VenusFun"] .partner-logo{
+    width:235px;
+    max-width:235px;
+    max-height:72px;
+}
+/* ==================================================
    JE JOUE
 ================================================== */
 
