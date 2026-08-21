@@ -896,6 +896,28 @@ img{
     max-height:72px;
 }
 /* ==================================================
+   BLUSH
+================================================== */
+
+.partner-offer-card[data-partner="Blush"]{
+    background:linear-gradient(
+        180deg,
+        #f8f3ff 0%,
+        #e9dcfa 100%
+    );
+}
+
+.partner-offer-card[data-partner="Blush"] .partner-logo-header{
+    background:#17131d;
+    border-bottom:2px solid #7340b7;
+}
+
+.partner-offer-card[data-partner="Blush"] .partner-logo{
+    width:220px;
+    max-width:220px;
+    max-height:72px;
+}
+/* ==================================================
    PARTNER CARD BODY
 ================================================== */
 
