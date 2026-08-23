@@ -383,63 +383,110 @@ img{
 
 .store-category-filter{
     width:100%;
+    max-width:1180px;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-wrap:wrap;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:18px;
 
-    gap:10px;
-
-    margin:0 auto 28px;
+    margin:18px auto 32px;
 }
 
 .store-filter-btn{
-    min-height:36px;
+    min-width:0;
+    padding:0;
 
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
+    display:flex;
+    flex-direction:column;
+    align-items:stretch;
+    justify-content:flex-start;
 
-    padding:8px 16px;
+    overflow:hidden;
 
-    border:1.5px solid rgba(212,175,55,.78);
-    border-radius:999px;
+    border:1px solid rgba(212,175,55,.55);
+    border-radius:18px;
 
     color:var(--navy-text);
     background:#ffffff;
 
-    font-size:12px;
+    font-size:14px;
     font-weight:800;
     line-height:1.15;
 
     cursor:pointer;
 
     transition:
-        color .2s ease,
-        background .2s ease,
+        transform .2s ease,
         border-color .2s ease,
-        transform .2s ease;
+        box-shadow .2s ease;
+}
+
+.store-filter-btn img{
+    display:block;
+    width:100%;
+    aspect-ratio:1 / 1;
+    object-fit:cover;
+}
+
+.store-filter-btn span{
+    min-height:54px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:10px 12px;
+
+    background:#ffffff;
 }
 
 .store-filter-btn:hover{
-    color:#ffffff;
-    background:var(--navy-text);
-    border-color:var(--navy-text);
+    color:var(--navy-text);
+    border-color:#c99a19;
 
-    transform:translateY(-1px);
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 10px 24px rgba(0,0,0,.10);
 }
 
 .store-filter-btn.active{
     color:var(--navy-text);
-    background:linear-gradient(
-        180deg,
-        #f7d65c 0%,
-        #e8b92f 100%
-    );
     border-color:#c99a19;
+
+    box-shadow:
+        0 0 0 2px rgba(201,154,25,.18),
+        0 10px 24px rgba(0,0,0,.10);
 }
 
+.store-filter-btn.active span{
+    background:linear-gradient(
+        180deg,
+        #f8dd67 0%,
+        #ecb92f 100%
+    );
+}
+
+@media (max-width:760px){
+
+    .store-category-filter{
+        grid-template-columns:repeat(2, 1fr);
+        gap:12px;
+
+        margin:16px auto 26px;
+    }
+
+    .store-filter-btn{
+        border-radius:14px;
+        font-size:12px;
+    }
+
+    .store-filter-btn span{
+        min-height:48px;
+        padding:8px 6px;
+    }
+
+}
 /* ==================================================
    09 PARTNER OFFERS SECTION
 ================================================== */
