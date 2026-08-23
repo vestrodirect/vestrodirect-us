@@ -469,12 +469,15 @@ img{
 
 @media (max-width:760px){
 
-    .store-category-filter{
-        grid-template-columns:repeat(2, 1fr);
-        gap:12px;
+   .store-category-filter{
+    width:calc(100% - 24px);
+    max-width:none;
 
-        margin:16px auto 26px;
-    }
+    grid-template-columns:repeat(2, minmax(0,1fr));
+    gap:12px;
+
+    margin:16px auto 26px;
+}
 
     .store-filter-btn{
         border-radius:14px;
