@@ -942,6 +942,7 @@ img{
 }
 .partner-offer-card[data-partner="Bellesa Boutique"] .partner-category-links{
     margin-top:185px;
+   row-gap:12px;
 }
 
 .partner-offer-card[data-partner="Bellesa Boutique"] .partner-main-button{
