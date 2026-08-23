@@ -940,6 +940,14 @@ img{
 .partner-offer-card[data-partner="Bellesa Boutique"] .partner-category-links a{
     background:rgba(255,255,255,.92);
 }
+.partner-offer-card[data-partner="Bellesa Boutique"] .partner-category-links{
+    margin-top:150px;
+}
+
+.partner-offer-card[data-partner="Bellesa Boutique"] .partner-main-button{
+    margin-top:20px;
+    margin-bottom:18px;
+}
 /* ==================================================
    HERJOYHOUSE
 ================================================== */
