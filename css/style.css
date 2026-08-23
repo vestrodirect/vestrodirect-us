@@ -885,14 +885,16 @@ img{
 ================================================== */
 
 .partner-offer-card[data-partner="Bellesa Boutique"]{
-    background:linear-gradient(
-        180deg,
-        #fffdfd 0%,
-        #fff4f2 100%
-    );
+    position:relative;
+    overflow:hidden;
+
+    background:#fff4f2;
 }
 
 .partner-offer-card[data-partner="Bellesa Boutique"] .partner-logo-header{
+    position:relative;
+    z-index:3;
+
     background:#f7d2cf;
     border-bottom:2px solid #cf675f;
 }
@@ -901,6 +903,43 @@ img{
     width:230px;
     max-width:230px;
     max-height:72px;
+}
+
+.partner-offer-card[data-partner="Bellesa Boutique"] .partner-store-cover{
+    position:absolute;
+    inset:0;
+
+    width:100%;
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+    object-position:center;
+
+    z-index:0;
+}
+
+.partner-offer-card[data-partner="Bellesa Boutique"] .partner-card-body{
+    position:relative;
+    z-index:2;
+
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.25) 0%,
+        rgba(255,247,246,.48) 100%
+    );
+}
+
+.partner-offer-card[data-partner="Bellesa Boutique"] .partner-card-text{
+    background:rgba(255,255,255,.76);
+    border-radius:12px;
+
+    padding:12px 16px;
+}
+
+.partner-offer-card[data-partner="Bellesa Boutique"] .partner-category-links a{
+    background:rgba(255,255,255,.92);
 }
 /* ==================================================
    HERJOYHOUSE
