@@ -927,7 +927,7 @@ img{
     color:#ffffff;
     text-shadow:0 1px 4px rgba(0,0,0,.65);
 }
-.partner-offer-card[data-partner="Bellesa Boutique"] .partner-category-links a{
+.partner-offer-card[data-partner="Bellesa Boutique"] .partner-category-links a:not(.category-active){
     background:rgba(255,255,255,.92);
 }
 .partner-offer-card[data-partner="Bellesa Boutique"] .partner-category-links{
