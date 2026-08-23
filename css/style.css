@@ -1289,7 +1289,19 @@ img{
         border-color .2s ease,
         transform .2s ease;
 }
+.partner-category-links a.category-active{
+    background:linear-gradient(
+        180deg,
+        #f8dd67 0%,
+        #ecb92f 100%
+    );
 
+    color:var(--navy-text);
+    border-color:#c99a19;
+
+    box-shadow:
+        0 0 0 2px rgba(201,154,25,.18);
+}
 .partner-category-links a:hover{
     color:#ffffff;
     background:var(--navy-text);
