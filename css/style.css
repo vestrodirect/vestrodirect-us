@@ -907,15 +907,13 @@ img{
 
 .partner-offer-card[data-partner="Bellesa Boutique"] .partner-store-cover{
     position:absolute;
-    inset:0;
+    left:0;
+    top:106px;
 
     width:100%;
-    height:100%;
+    height:auto;
 
     display:block;
-
-    object-fit:cover;
-    object-position:center;
 
     z-index:0;
 }
@@ -924,20 +922,17 @@ img{
     position:relative;
     z-index:2;
 
-    background:linear-gradient(
-        180deg,
-        rgba(255,255,255,.25) 0%,
-        rgba(255,247,246,.48) 100%
-    );
+    background:transparent;
 }
-
 .partner-offer-card[data-partner="Bellesa Boutique"] .partner-card-text{
-    background:rgba(255,255,255,.76);
-    border-radius:12px;
+    background:transparent;
+    border-radius:0;
 
     padding:12px 16px;
-}
 
+    color:#ffffff;
+    text-shadow:0 1px 4px rgba(0,0,0,.65);
+}
 .partner-offer-card[data-partner="Bellesa Boutique"] .partner-category-links a{
     background:rgba(255,255,255,.92);
 }
