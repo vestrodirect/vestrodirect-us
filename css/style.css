@@ -909,11 +909,15 @@ img{
     position:absolute;
     left:0;
     top:106px;
+    bottom:0;
 
     width:100%;
-    height:auto;
+    height:calc(100% - 106px);
 
     display:block;
+
+    object-fit:cover;
+    object-position:center;
 
     z-index:0;
 }
