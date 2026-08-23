@@ -3140,11 +3140,12 @@ document.addEventListener("DOMContentLoaded", function () {
   <!-- ==================================================
          <!-- STORE CATEGORY FILTER -->
     =================================================== --> 
- <script>
- document.addEventListener("DOMContentLoaded", function () {
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
     const filterButtons = document.querySelectorAll(".store-filter-btn");
     const storeCards = document.querySelectorAll(".partner-offer-card");
+    const categoryLinks = document.querySelectorAll(".partner-category-links a");
 
     filterButtons.forEach(function (button) {
 
@@ -3152,12 +3153,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const selectedCategory = button.dataset.filter;
 
+            /* Верхние кнопки категорий */
             filterButtons.forEach(function (btn) {
                 btn.classList.remove("active");
             });
 
             button.classList.add("active");
 
+            /* Убираем старую золотую подсветку внутри карт */
+            categoryLinks.forEach(function (link) {
+                link.classList.remove("category-active");
+            });
+
+            /* Подсвечиваем выбранную категорию внутри карт */
+            if (selectedCategory !== "all") {
+
+                document.querySelectorAll(
+                    '.partner-category-links a[data-category="' + selectedCategory + '"]'
+                ).forEach(function (link) {
+                    link.classList.add("category-active");
+                });
+
+            }
+
+            /* Фильтруем магазины */
             storeCards.forEach(function (card) {
 
                 const categories = (card.dataset.categories || "")
