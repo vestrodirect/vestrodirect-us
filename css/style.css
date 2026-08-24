@@ -1167,18 +1167,23 @@ img{
 }
 
 .partner-offer-card[data-partner="Loveuce"] .partner-card-body{
-    background:
-        linear-gradient(
-            rgba(0,0,0,.18),
-            rgba(0,0,0,.18)
-        ),
-        url("images/loveuce-store-cover.webp")
-        center / cover no-repeat;
+    position:relative;
+    background-image:url("images/loveuce-store-cover.webp");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
 .partner-offer-card[data-partner="Loveuce"] .partner-card-text{
     color:#ffffff;
-    text-shadow:0 1px 3px rgba(0,0,0,.75);
+    text-shadow:
+        0 1px 2px rgba(0,0,0,.95),
+        0 2px 5px rgba(0,0,0,.70);
+}
+
+.partner-offer-card[data-partner="Loveuce"] .partner-category-links{
+    margin-top:180px;
+    row-gap:12px;
 }
 /* ==================================================
    TU MANDO
