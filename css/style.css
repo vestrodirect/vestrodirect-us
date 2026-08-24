@@ -1546,6 +1546,26 @@ img{
     max-width:220px;
     max-height:72px;
 }
+
+.partner-offer-card[data-partner="Blush"] .partner-card-body{
+    background:
+        linear-gradient(
+            rgba(0,0,0,.20),
+            rgba(0,0,0,.20)
+        ),
+        url("../images/blush-store-cover.webp")
+        center center / cover no-repeat;
+}
+
+.partner-offer-card[data-partner="Blush"] .partner-card-text{
+    color:#ffffff;
+    text-shadow:0 1px 3px rgba(0,0,0,.85);
+}
+
+.partner-offer-card[data-partner="Blush"] .partner-category-links{
+    margin-top:160px;
+    row-gap:12px;
+}
 /* ==================================================
    ENJOX
 ================================================== */
