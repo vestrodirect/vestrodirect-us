@@ -1529,14 +1529,16 @@ img{
 ================================================== */
 
 .partner-offer-card[data-partner="Blush"]{
-    background:linear-gradient(
-        180deg,
-        #f8f3ff 0%,
-        #e9dcfa 100%
-    );
+    position:relative;
+    overflow:hidden;
+
+    background:#e9dcfa;
 }
 
 .partner-offer-card[data-partner="Blush"] .partner-logo-header{
+    position:relative;
+    z-index:3;
+
     background:#17131d;
     border-bottom:2px solid #7340b7;
 }
@@ -1547,24 +1549,52 @@ img{
     max-height:72px;
 }
 
+.partner-offer-card[data-partner="Blush"] .partner-store-cover{
+    position:absolute;
+    left:0;
+    top:106px;
+    bottom:0;
+
+    width:100%;
+    height:calc(100% - 106px);
+
+    display:block;
+
+    object-fit:cover;
+    object-position:center;
+
+    z-index:0;
+}
+
 .partner-offer-card[data-partner="Blush"] .partner-card-body{
-    background:
-        linear-gradient(
-            rgba(0,0,0,.20),
-            rgba(0,0,0,.20)
-        ),
-        url("../images/blush-store-cover.webp")
-        center center / cover no-repeat;
+    position:relative;
+    z-index:2;
+
+    background:transparent;
 }
 
 .partner-offer-card[data-partner="Blush"] .partner-card-text{
+    background:transparent;
+    border-radius:0;
+
+    padding:12px 16px;
+
     color:#ffffff;
-    text-shadow:0 1px 3px rgba(0,0,0,.85);
+    text-shadow:0 1px 4px rgba(0,0,0,.65);
+}
+
+.partner-offer-card[data-partner="Blush"] .partner-category-links a:not(.category-active):not(:hover){
+    background:rgba(255,255,255,.92);
 }
 
 .partner-offer-card[data-partner="Blush"] .partner-category-links{
     margin-top:160px;
     row-gap:12px;
+}
+
+.partner-offer-card[data-partner="Blush"] .partner-main-button{
+    margin-top:20px;
+    margin-bottom:18px;
 }
 /* ==================================================
    ENJOX
