@@ -880,24 +880,73 @@ img{
 ================================================== */
 
 .partner-offer-card[data-partner="Serika"]{
-    background:linear-gradient(
-        180deg,
-        #fffafa 0%,
-        #f7eeee 100%
-    );
+    position:relative;
+    overflow:hidden;
+
+    background:#f7eeee;
 }
 
 .partner-offer-card[data-partner="Serika"] .partner-logo-header{
+    position:relative;
+    z-index:3;
+
     background:#9c4943;
     border-bottom:2px solid #ddb6b2;
 }
 
-.partner-offer-card[data-partner="Body Body"] .partner-logo{
+.partner-offer-card[data-partner="Serika"] .partner-logo{
     width:280px;
     max-width:280px;
     max-height:78px;
 }
 
+.partner-offer-card[data-partner="Serika"] .partner-store-cover{
+    position:absolute;
+    left:0;
+    top:106px;
+    bottom:0;
+
+    width:100%;
+    height:calc(100% - 106px);
+
+    display:block;
+
+    object-fit:cover;
+    object-position:center;
+
+    z-index:0;
+}
+
+.partner-offer-card[data-partner="Serika"] .partner-card-body{
+    position:relative;
+    z-index:2;
+
+    background:transparent;
+}
+
+.partner-offer-card[data-partner="Serika"] .partner-card-text{
+    background:transparent;
+    border-radius:0;
+
+    padding:12px 16px;
+
+    color:#ffffff;
+    text-shadow:0 1px 4px rgba(0,0,0,.65);
+}
+
+.partner-offer-card[data-partner="Serika"] .partner-category-links a:not(.category-active):not(:hover){
+    background:rgba(255,255,255,.92);
+}
+
+.partner-offer-card[data-partner="Serika"] .partner-category-links{
+    margin-top:180px;
+    row-gap:12px;
+}
+
+.partner-offer-card[data-partner="Serika"] .partner-main-button{
+    margin-top:20px;
+    margin-bottom:18px;
+}
 /* ==================================================
    BODY BODY
 ================================================== */
