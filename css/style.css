@@ -1619,8 +1619,17 @@ img{
     max-height:72px;
 }
 
+.partner-offer-card[data-partner="Enjox"] .partner-card-text{
+    color:#ffffff;
+}
+
+.partner-offer-card[data-partner="Enjox"] .partner-category-links{
+    margin-top:160px;
+    row-gap:12px;
+}
+
 .partner-offer-card[data-partner="Enjox"] .partner-main-button{
-     margin-top:18px;
+    margin-top:18px;
 }
 /* ==================================================
    PARTNER CARD BODY
