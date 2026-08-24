@@ -1381,43 +1381,20 @@ img{
     margin-bottom:18px;
 }
 /* ==================================================
-   HERJOYHOUSE
-================================================== */
-
-.partner-offer-card[data-partner="HERJOYHOUSE"]{
-    background:linear-gradient(
-        180deg,
-        #ffffff 0%,
-        #fff6f8 100%
-    );
-}
-
-.partner-offer-card[data-partner="HERJOYHOUSE"] .partner-logo-header{
-    background:#f3dce5;
-    border-bottom:2px solid #e79aaf;
-}
-
-.partner-offer-card[data-partner="HERJOYHOUSE"] .partner-logo{
-    width:230px;
-    max-width:230px;
-    max-height:72px;
-}
-.partner-offer-card[data-partner="HERJOYHOUSE"] .partner-main-button{
-    margin-top:56px;
-}
-/* ==================================================
    UNBOUND
 ================================================== */
 
 .partner-offer-card[data-partner="Unbound"]{
-    background:linear-gradient(
-        180deg,
-        #f4fdff 0%,
-        #e8f8fc 100%
-    );
+    position:relative;
+    overflow:hidden;
+
+    background:#e8f8fc;
 }
 
 .partner-offer-card[data-partner="Unbound"] .partner-logo-header{
+    position:relative;
+    z-index:3;
+
     background:#ef72b7;
     border-bottom:2px solid #9feef2;
 }
@@ -1426,6 +1403,54 @@ img{
     width:190px;
     max-width:190px;
     max-height:72px;
+}
+
+.partner-offer-card[data-partner="Unbound"] .partner-store-cover{
+    position:absolute;
+    left:0;
+    top:106px;
+    bottom:0;
+
+    width:100%;
+    height:calc(100% - 106px);
+
+    display:block;
+
+    object-fit:cover;
+    object-position:center;
+
+    z-index:0;
+}
+
+.partner-offer-card[data-partner="Unbound"] .partner-card-body{
+    position:relative;
+    z-index:2;
+
+    background:transparent;
+}
+
+.partner-offer-card[data-partner="Unbound"] .partner-card-text{
+    background:transparent;
+    border-radius:0;
+
+    padding:12px 16px;
+
+    color:#ffffff;
+    text-shadow:0 1px 4px rgba(0,0,0,.65);
+}
+
+.partner-offer-card[data-partner="Unbound"] .partner-category-links a:not(.category-active):not(:hover){
+    background:rgba(255,255,255,.92);
+}
+
+.partner-offer-card[data-partner="Unbound"] .partner-category-links{
+    margin-top:160px;
+    row-gap:12px;
+}
+
+.partner-offer-card[data-partner="Unbound"] .partner-main-button{
+    margin-top:20px;
+    margin-bottom:18px;
 }
 /* ==================================================
    MOTORBUNNY
