@@ -1143,7 +1143,7 @@ img{
     margin-bottom:18px;
 }
 
-/* ================================================== */
+/* ==================================================
    LOVEUCE
 ================================================== */
 
@@ -1164,6 +1164,21 @@ img{
     width:220px;
     max-width:220px;
     max-height:72px;
+}
+
+.partner-offer-card[data-partner="Loveuce"] .partner-card-body{
+    background:
+        linear-gradient(
+            rgba(0,0,0,.18),
+            rgba(0,0,0,.18)
+        ),
+        url("images/loveuce-store-cover.webp")
+        center / cover no-repeat;
+}
+
+.partner-offer-card[data-partner="Loveuce"] .partner-card-text{
+    color:#ffffff;
+    text-shadow:0 1px 3px rgba(0,0,0,.75);
 }
 /* ==================================================
    TU MANDO
