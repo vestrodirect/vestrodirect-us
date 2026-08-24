@@ -1075,14 +1075,16 @@ img{
 ================================================== */
 
 .partner-offer-card[data-partner="Yeloly"]{
-    background:linear-gradient(
-        180deg,
-        #fffefe 0%,
-        #f8f4fb 100%
-    );
+    position:relative;
+    overflow:hidden;
+
+    background:#f8f4fb;
 }
 
 .partner-offer-card[data-partner="Yeloly"] .partner-logo-header{
+    position:relative;
+    z-index:3;
+
     background:#0d0d0d;
     border-bottom:2px solid #5f1682;
 }
@@ -1092,7 +1094,56 @@ img{
     max-width:205px;
     max-height:72px;
 }
-/* ==================================================
+
+.partner-offer-card[data-partner="Yeloly"] .partner-store-cover{
+    position:absolute;
+    left:0;
+    top:106px;
+    bottom:0;
+
+    width:100%;
+    height:calc(100% - 106px);
+
+    display:block;
+
+    object-fit:cover;
+    object-position:center;
+
+    z-index:0;
+}
+
+.partner-offer-card[data-partner="Yeloly"] .partner-card-body{
+    position:relative;
+    z-index:2;
+
+    background:transparent;
+}
+
+.partner-offer-card[data-partner="Yeloly"] .partner-card-text{
+    background:transparent;
+    border-radius:0;
+
+    padding:12px 16px;
+
+    color:#ffffff;
+    text-shadow:0 1px 4px rgba(0,0,0,.65);
+}
+
+.partner-offer-card[data-partner="Yeloly"] .partner-category-links a:not(.category-active):not(:hover){
+    background:rgba(255,255,255,.92);
+}
+
+.partner-offer-card[data-partner="Yeloly"] .partner-category-links{
+    margin-top:180px;
+    row-gap:12px;
+}
+
+.partner-offer-card[data-partner="Yeloly"] .partner-main-button{
+    margin-top:20px;
+    margin-bottom:18px;
+}
+
+/* ================================================== */
    LOVEUCE
 ================================================== */
 
