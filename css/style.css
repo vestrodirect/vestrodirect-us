@@ -2509,16 +2509,16 @@ img{
         gap:20px;
     }
 
- 
-
     .partner-logo-header{
-        min-height:78px;
-        padding:14px 20px;
-    }
+    height:86px;
+    min-height:86px;
+    padding:14px 20px;
+}
 
-   .partner-logo{
-    max-width:220px;
-    max-height:58px;
+.partner-offer-card .partner-logo{
+    width:auto !important;
+    max-width:220px !important;
+    max-height:58px !important;
 }
 
 .partner-logo-secondary{
@@ -2526,6 +2526,10 @@ img{
     max-height:48px;
 }
 
+.partner-offer-card .partner-store-cover{
+    top:86px !important;
+    height:calc(100% - 86px) !important;
+}
     .partner-card-body{
         padding:18px 18px 20px;
     }
