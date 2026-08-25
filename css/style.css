@@ -2527,8 +2527,18 @@ img{
 }
 
 .partner-offer-card .partner-store-cover{
-    top:86px !important;
-    height:calc(100% - 86px) !important;
+    position:relative !important;
+    top:auto !important;
+    left:auto !important;
+    bottom:auto !important;
+
+    width:100% !important;
+    height:auto !important;
+
+    display:block;
+
+    object-fit:contain !important;
+    object-position:center !important;
 }
     .partner-card-body{
         padding:18px 18px 20px;
