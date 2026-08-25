@@ -1764,6 +1764,39 @@ img{
     margin-bottom:18px;
 }
 /* ==================================================
+   FAVIBES
+================================================== */
+
+.partner-offer-card[data-partner="Favibes"]{
+    background:#ffffff;
+}
+
+.partner-offer-card[data-partner="Favibes"] .partner-logo-header{
+    background:#ffffff;
+    border-bottom:2px solid #b51f38;
+}
+
+.partner-offer-card[data-partner="Favibes"] .partner-logo{
+    width:190px;
+    max-width:190px;
+    max-height:72px;
+}
+
+.partner-offer-card[data-partner="Favibes"] .partner-card-body{
+    position:relative;
+    z-index:2;
+    background:transparent;
+}
+
+.partner-offer-card[data-partner="Favibes"] .partner-card-text{
+    color:#000000;
+}
+
+.partner-offer-card[data-partner="Favibes"] .partner-category-links{
+    margin-top:160px;
+    row-gap:12px;
+}
+/* ==================================================
    PARTNER DIVIDER
 ================================================== */
 
